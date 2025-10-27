@@ -1,3 +1,39 @@
+# RAG System and Conversational Interface
+## Overview
+
+A simple Retrieval-Augmented Generation (RAG) web app that lets users upload .txt and .pdf files, ask questions, and get document-grounded answers.
+Built with Streamlit, using meta.llama-3.2-1b-instruct for chat and google.text-embedding for retrieval.
+
+## Features
+
+Supports both TXT and PDF uploads.
+
+Automatically chunks text for retrieval.
+
+Vector-based retrieval using cosine similarity (no database).
+
+Interactive chat interface with visible retrieved chunks.
+
+## How to Run
+export API_KEY="your_cornell_api_key"
+streamlit run chat_with_pdf.py
+
+Then open the local Streamlit URL (usually http://localhost:8501).
+
+## Configurations and Changes
+
+Added PDF support using pypdf.
+
+Fixed model to meta.llama-3.2-1b-instruct.
+
+Added sidebar controls (chunk_size, overlap, top_k).
+
+Displayed retrieved chunks for transparency.
+
+
+
+
+
 # INFO 5940 
 Welcome to the INFO 5940 repository. You will complete your work using [**GitHub Codespaces**](#about-github-codespaces) and save your progress in your own GitHub repository. This guide will walk you through setting up the development environment and running the test notebook.  
 
@@ -90,3 +126,4 @@ You will receive an individual API Key for class assignments. To prevent acciden
 
 ## Troubleshooting
 - The Jupyter extension should install automatically. If you still cannot select a Python kernel on Jupyter Notebook: Go to the left sidebar >> **Extensions** >> search for **Jupyter** >> reload window (or reinstall it).   
+
