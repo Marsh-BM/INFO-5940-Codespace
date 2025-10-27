@@ -16,6 +16,7 @@ Interactive chat interface with visible retrieved chunks.
 
 ## How to Run
 export API_KEY="your_cornell_api_key"
+
 streamlit run chat_with_pdf.py
 
 Then open the local Streamlit URL (usually http://localhost:8501).
