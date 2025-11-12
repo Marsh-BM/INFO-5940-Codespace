@@ -14,7 +14,9 @@ Initially, the Reviewer Agent returned an “invalid or missing API key” error
 To resolve this, I created a `.env` file containing both the Cornell OpenAI endpoint variables and a valid Tavily key in the following format:
 
 OPENAI_API_KEY=sk-xxxx
+
 OPENAI_BASE_URL=https://api.ai.it.cornell.edu/
+
 TAVILY_API_KEY=tvly_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 After reloading Streamlit with these configurations, the Reviewer Agent was able to perform real-time validation.  
