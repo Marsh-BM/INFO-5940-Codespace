@@ -23,9 +23,9 @@ I intentionally formatted the Reviewer’s output into two sections:
 1. **Delta List** – a concise summary of detected factual errors and suggested corrections (e.g., “The Louvre is closed on Tuesdays → moved to Day 2”).  
 2. **Final Validated Itinerary** – the fully revised, clean plan.  
 This structure makes the interaction between the two agents transparent and easy to grade.  
-Additionally, I enabled **real-time tool logging** in Streamlit’s sidebar so that every `internet_search` query (for example, *“Notre-Dame Cathedral reopening updates 2024”*) and its result preview are visible to the user.  
+Additionally, I enabled **real-time tool logging** in Streamlit’s sidebar so that every `internet_search` query and its result preview are visible to the user.  
 This provides explainability, an essential quality for multi-agent systems.
 
 ### External tools and assistance
 I used the Tavily API for web search, the Cornell OpenAI Gateway for model access, and Streamlit for interface design.  
-Minor prompt-tuning ideas were inspired by GenAI-assisted suggestions, but all final implementation and debugging were completed independently.
+Minor prompt-tuning ideas were inspired by GPT-assisted suggestions, but all final implementation and debugging were completed independently.
